@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Fest 2026</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f2f2f2;
+    }
+    .header {
+      background: #1a5fbe;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar {
+      background: white;
+      text-align: center;
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .left {
+      flex: 1.5;
+    }
+    .right {
+      flex: 1;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      width: 200px;
+      border-left: 5px solid #1a5fbe;
+    }
+    .card:nth-child(1) {
+      border-color: #ff6b6b;
+      background: #fff0f0;
+    }
+    .card:nth-child(2) {
+      border-color: #4ecdc4;
+      background: #e6fffe;
+    }
+    .card:nth-child(3) {
+      border-color: #ffd93d;
+      background: #fffbe6;
+    }
+    .card:nth-child(4) {
+      border-color: #a96bf8;
+      background: #f5efff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #1a5fbe;
+      color: white;
+    }
+    .form {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    input, select {
+      width: 95%;
+      padding: 8px;
+      margin: 5px 0 12px 0;
+    }
+    button {
+      background: #1a5fbe;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .footer {
+      text-align: center;
+      background: #ddd;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 700px) {
+      .main {
+        flex-direction: column;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>COLLEGE FEST 2026</h1>
+    <p>Annual College Fest | 12-14 Feb 2027 | NRI UNIVERSITY</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">Workshops</a>
+    <a href="#">Schedule</a>
+    <a href="#">Register</a>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <h2>Cultural Events</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Music Night</h3>
+          <p>Battle of Bands - 12 Feb - 6 PM - Open Auditorium</p>
+        </div>
+        <div class="card">
+          <h3>Dance Competition</h3>
+          <p>Solo & Group - 13 Feb - 4 PM - Main Stage</p>
+        </div>
+        <div class="card">
+          <h3>Drama Fest</h3>
+          <p>Street Play - 13 Feb - 5 PM - OAT</p>
+        </div>
+        <div class="card">
+          <h3>Art Exhibit</h3>
+          <p>Painting, Photography - 13 Feb - 10 AM - Art Hall</p>
+        </div>
+      </div>
+
+      <h2>Workshop Section</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>UI/UX Workshop</h3>
+          <p>Basics of Figma & Design Thinking - 12 Feb - 10 AM - Lab 101</p>
+        </div>
+        <div class="card">
+          <h3>Robotics Workshop</h3>
+          <p>Hands-on Arduino & Robotics - 14 Feb - 11 AM - Robotics Lab</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Schedule</h2>
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Venue</th>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>Inauguration</td>
+          <td>Main Auditorium</td>
+        </tr>
+        <tr>
+          <td>02:00 PM</td>
+          <td>Coding Contest</td>
+          <td>Lab 202</td>
+        </tr>
+        <tr>
+          <td>05:00 PM</td>
+          <td>Prize Distribution</td>
+          <td>Main Auditorium</td>
+        </tr>
+      </table>
+
+      <h2>Rules & Guidelines</h2>
+      <ul>
+        <li>ID card is mandatory for all participants</li>
+        <li>Register before 10th Feb 2026</li>
+        <li>Follow campus code of conduct at all times</li>
+        <li>One student can register for max 2 events</li>
+      </ul>
+
+      <h2>Registration Form</h2>
+      <div class="form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+        <label>Select Event</label>
+        <select>
+          <option>-- Choose an event --</option>
+          <option>Music Night</option>
+          <option>Dance Competition</option>
+          <option>UI/UX Workshop</option>
+          <option>Robotics Workshop</option>
+        </select>
+        <button>Register Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2027 NRI UNIVERSITY | Student Project - College Fest Management</p>
+  </div>
+
+</body>
+</html>
