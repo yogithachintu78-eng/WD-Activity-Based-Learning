@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogitha Orsu | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #252044;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #211b45;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            color: #bba8ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bba8ff;
+        }
+
+        .hero {
+            min-height: 75vh;
+            padding: 70px 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #211b45, #6741c6);
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            animation: slideIn 1s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 55px);
+            margin: 12px 0;
+        }
+
+        .hero h1 span {
+            color: #d5c8ff;
+        }
+
+        .hero p {
+            margin-bottom: 22px;
+            font-size: 17px;
+        }
+
+        .profile {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background: #bba8ff;
+            color: #211b45;
+            display: grid;
+            place-items: center;
+            font-size: 58px;
+            font-weight: bold;
+            border: 6px solid white;
+            box-shadow: 0 0 30px #bba8ff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d5c8ff;
+            color: #211b45;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: white;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #5035a5;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px #211b4515;
+            transition: 0.3s;
+            border-bottom: 4px solid #8062dc;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px #211b4525;
+        }
+
+        .card h3 {
+            color: #5035a5;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            background: #ebe6ff;
+        }
+
+        .skill {
+            background: white;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #5035a5;
+        }
+
+        .resume {
+            text-align: center;
+        }
+
+        .contact {
+            background: #211b45;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: #d5c8ff;
+        }
+
+        .contact a {
+            color: #d5c8ff;
+        }
+
+        footer {
+            background: #17132f;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Yogitha.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p>Hello, welcome to my portfolio!</p>
+            <h1>I'm <span>Yogitha Orsu</span></h1>
+            <h3>B.Tech First-Year CSE Student</h3>
+
+            <p>
+                I am a Computer Science and Engineering student
+                interested in web development and learning new
+                technologies. This website introduces me and my
+                academic journey.
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="profile">YOGITHA</div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                My name is Yogitha Orsu. I am pursuing B.Tech in
+                Computer Science and Engineering at NRI University.
+                I am building my knowledge of programming and web
+                development. My goal is to improve my technical
+                skills by learning and creating projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">My Education</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>B.Tech - CSE</h3>
+                <p><strong>College:</strong> NRI University</p>
+                <p><strong>Year:</strong> First Year</p>
+                <p>
+                    Studying Computer Science and Engineering
+                    and developing technical knowledge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="cards">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Web Development</div>
+            <div class="skill">Communication</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+
+        <p style="text-align:center; margin-top:20px;">
+            These are learning areas and starter skill categories.
+            Edit them to match your actual experience.
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2 class="section-title">My Resume</h2>
+
+        <div class="resume">
+            <p>
+                View my basic student profile and education details.
+                You can add your complete resume PDF here.
+            </p>
+
+            <!-- Keep your resume PDF in the same folder
+                 and name it resume.pdf -->
+            <a href="resume.html" class="btn" target="_blank">
+                View Resume PDF
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p><strong>Name:</strong> Yogitha Orsu</p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:yogithachintu78@gmail.com">
+                yogithachintu78@gmail.com
+            </a>
+        </p>
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:9381956587">9381956587</a>
+        </p>
+        <p style="margin-top:15px;">
+            Feel free to contact me for academic or project-related
+            communication.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Yogitha Orsu | Personal Portfolio</p>
+        <p>Designed with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
